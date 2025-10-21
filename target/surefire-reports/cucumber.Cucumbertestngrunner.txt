@@ -1,0 +1,62 @@
+-------------------------------------------------------------------------------
+Test set: cucumber.Cucumbertestngrunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.831 s <<< FAILURE! - in cucumber.Cucumbertestngrunner
+cucumber.Cucumbertestngrunner.runScenario["", "purchase the order"](1)  Time elapsed: 1.529 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
+Host info: host: 'DESKTOP-R66QVO3', ip: '192.168.1.41'
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:99)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
+	at ShoppingSite.Order_framework.driver_launch.launch(driver_launch.java:55)
+	at ShoppingSite.Order_framework.driver_launch.broswer_maximize(driver_launch.java:92)
+	at cucumberStepdefinition.StepDefinition.I_landed_on_application_landing_page(StepDefinition.java:26)
+	at ✽.I landed on application landing page(file:///D:/Java%20and%20Selenium/Java-and-Selenium/Order_framework/src/test/java/cucumber/submitorder.feature:4)
+
+cucumber.Cucumbertestngrunner.runScenario["", "purchase the order"](2)  Time elapsed: 0.22 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
+Host info: host: 'DESKTOP-R66QVO3', ip: '192.168.1.41'
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:99)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
+	at ShoppingSite.Order_framework.driver_launch.launch(driver_launch.java:55)
+	at ShoppingSite.Order_framework.driver_launch.broswer_maximize(driver_launch.java:92)
+	at cucumberStepdefinition.StepDefinition.I_landed_on_application_landing_page(StepDefinition.java:26)
+	at ✽.I landed on application landing page(file:///D:/Java%20and%20Selenium/Java-and-Selenium/Order_framework/src/test/java/cucumber/submitorder.feature:4)
+
